@@ -56,7 +56,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/trizzy/Desktop/wdi/exercises/week-8/flask-api/.env"
+set -gx VIRTUAL_ENV "/Users/trizzy/Desktop/wdi/assignments/sf-wdi-51-assignments/tristan-TristanD/week-8/flask-api/.env"
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | tr "." "\n")[1] -lt 3

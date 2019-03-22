@@ -115,10 +115,33 @@ class Comment(db.Model):
 
         return comment_schema.jsonify(new_comment)
 
+
+
+
+    @classmethod
+    def update_comment(cls, comment_id, title=None, description=None):
+        comment = Comment.query.get(comment_id)
+        if title != None:
+            comment.title = title 
+        if description != None:
+            comment.description = description 
+        db.session.commit()
+        return comment_schema.jsonify(comment)
+
+    @classmethod
+    def delete_comment(cls, comment_id):
+        comment = Comment.query.get(comment_id)
+        db.session.delete(comment)
+        db.session.commit()
+        return comment_schema.jsonify(comment)
+
+
     @classmethod
     def get_post(cls,comment_id):
         comment = Comment.query.get(comment_id)
         return comment_schema.jsonify(comment)
+
+        
 
     
 class CommentSchema(marshmallow.Schema):

@@ -1,4 +1,4 @@
-#!/Users/trizzy/Desktop/wdi/exercises/week-8/flask-api/.env/bin/python3.7
+#!/Users/trizzy/Desktop/wdi/assignments/sf-wdi-51-assignments/tristan-TristanD/week-8/flask-api/.env/bin/python3.7
 # -*- coding: utf-8 -*-
 import re
 import sys
